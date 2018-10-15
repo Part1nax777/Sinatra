@@ -1,4 +1,7 @@
+var x=1;
+
 function something() 
 {
-	alert('clicked');
+	x=x+1;
+	alert(x);
 }
