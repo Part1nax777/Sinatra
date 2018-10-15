@@ -4,6 +4,7 @@ require 'sinatra'
 require 'sinatra/reloader'
 require 'sinatra/activerecord'
 
+class Product < ActiveRecord::Base
 
 get '/' do
 	erb :index			
