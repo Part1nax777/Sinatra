@@ -1,9 +1,11 @@
-function add_to_cart()
+function add_to_cart(id)
 {
-	alert('Hello from function');
+	var x = window.localStorage.getItem('product_' + id);
+	x = x*1+1;
+	window.localStorage.setItem('product_' + id, x);
 }
 
-
+/*
 function something() 
 {
 	var x = window.localStorage.getItem('aaa');
@@ -13,4 +15,4 @@ function something()
 x=1	
 	alert(x);
 }
-
+*/
