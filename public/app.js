@@ -47,6 +47,12 @@ function cart_get_number_of_items()
 	return cnt;
 }
 
+function cancel_order()
+{
+	alert('Cancel');
+	return false;
+}
+
 function cart_get_orders()
 {
 	var orders = '';
