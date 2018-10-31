@@ -50,5 +50,5 @@
 	</div>
 
 	<button type="submit" class="btn btn-success btn-lg">Place this order!</button>
-	<button class="btn btn-danger btn-lg" onclick="alert('Cancel');return false">Cancel</button>
+	<button class="btn btn-danger btn-lg" onclick="window.localStorage.clear();update_orders_input();update_orders_button();return false">Cancel</button>
 </form>
