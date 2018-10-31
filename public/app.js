@@ -49,7 +49,10 @@ function cart_get_number_of_items()
 
 function cancel_order()
 {
-	alert('Cancel');
+	window.localStorage.clear();
+	update_orders_input();
+	update_orders_button();
+	$('#cart').text('You cart is empty');
 	return false;
 }
 

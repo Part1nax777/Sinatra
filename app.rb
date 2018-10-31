@@ -29,6 +29,12 @@ end
 post '/cart' do
 	orders_input = params[:orders_input]
 	@items = parse_orders_input orders_input
+  
+  #вывод сообщения что корзина пуста
+
+  if @items.length == 0 
+    return erb :cart_is_empty
+  end
 	
 	@items.each do |item|
 		#id, cnt
